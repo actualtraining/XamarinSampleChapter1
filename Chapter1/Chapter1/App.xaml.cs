@@ -13,7 +13,7 @@ namespace Chapter1
 		{
 			InitializeComponent();
 
-			MainPage = new Chapter1.RelativePage();
+			MainPage = new Chapter1.GridPage();
 		}
 
 		protected override void OnStart ()
