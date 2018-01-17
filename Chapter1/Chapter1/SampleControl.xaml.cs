@@ -27,7 +27,17 @@ namespace Chapter1
             myDatePicker.DateSelected += MyDatePicker_DateSelected;
             myTimePicker.PropertyChanged += MyTimePicker_PropertyChanged;
             //myStepper.ValueChanged += MyStepper_ValueChanged;
+            mySlider.ValueChanged += MySlider_ValueChanged;
 		}
+
+        private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            
+            var newStep = Math.Round(e.NewValue / 1.0);
+            mySlider.Value = newStep * 1.0;
+        }
+
+       
 
         /*private void MyStepper_ValueChanged(object sender, ValueChangedEventArgs e)
         {

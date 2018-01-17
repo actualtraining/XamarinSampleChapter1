@@ -6,11 +6,13 @@
         <StackLayout>
             <Label x:Name="lblKeterangan" BindingContext="{x:Reference Name=myStepper}" 
                    Text="{Binding Value}" />
+            <Label BindingContext="{x:Reference Name=mySlider}" Text="{Binding Value}" />
             <Picker Title="Option" x:Name="myPicker" 
                     VerticalOptions="Center"/>
             <DatePicker x:Name="myDatePicker" Format="d" />
             <TimePicker x:Name="myTimePicker" Format="T" />
             <Stepper x:Name="myStepper" Minimum="0" Maximum="20" Increment="1" />
+            <Slider x:Name="mySlider" Minimum="0" Maximum="100" Value="0" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
