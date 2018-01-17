@@ -20,11 +20,18 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="{Binding Photo}" Grid.Row="0" Grid.Column="0" Margin="3" WidthRequest="50" />
-                                <StackLayout Grid.Row="0" Grid.Column="1">
+                                <Image Source="{Binding Photo}" Grid.Row="0" Grid.Column="0" Margin="3"
+                                       WidthRequest="50" VerticalOptions="StartAndExpand" />
+                                <StackLayout Grid.Row="0" Grid.Column="1" Spacing="0">
                                     <Label FontSize="Small" Text="{Binding Nama}" TextColor="Black" />
                                     <Label FontSize="Micro" Text="{Binding Keterangan}" TextColor="Blue" />
                                     <Label FontSize="Micro" Text="{Binding Harga,StringFormat='Rp.{0:N0}'}" TextColor="Orange" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Button Text="Beli" BackgroundColor="AliceBlue" FontSize="Micro"
+                                                HeightRequest="35" WidthRequest="50" 
+                                                HorizontalOptions="EndAndExpand" 
+                                                Command="{Binding Beli}" />
+                                    </StackLayout>
                                 </StackLayout>
                             </Grid>
                         </ViewCell>
