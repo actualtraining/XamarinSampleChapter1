@@ -13,7 +13,7 @@ namespace Chapter1
 		{
 			InitializeComponent();
 
-			MainPage = new Chapter1.SampleControl();
+			MainPage = new Chapter1.BindingListString();
 		}
 
 		protected override void OnStart ()

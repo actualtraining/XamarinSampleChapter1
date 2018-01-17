@@ -13,6 +13,8 @@
             <TimePicker x:Name="myTimePicker" Format="T" />
             <Stepper x:Name="myStepper" Minimum="0" Maximum="20" Increment="1" />
             <Slider x:Name="mySlider" Minimum="0" Maximum="100" Value="0" />
+            <Switch x:Name="mySwitch" HorizontalOptions="Start" />
+            <Switch x:Name="mySwitch2" HorizontalOptions="Start" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

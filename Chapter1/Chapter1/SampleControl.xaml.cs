@@ -28,7 +28,21 @@ namespace Chapter1
             myTimePicker.PropertyChanged += MyTimePicker_PropertyChanged;
             //myStepper.ValueChanged += MyStepper_ValueChanged;
             mySlider.ValueChanged += MySlider_ValueChanged;
-		}
+            mySwitch.Toggled += MySwitch_Toggled;
+            mySwitch2.Toggled += MySwitch_Toggled;
+        }
+
+        private void MySwitch_Toggled(object sender, ToggledEventArgs e)
+        {
+            if(sender == mySwitch)
+            {
+                DisplayAlert("MySwitch", e.Value.ToString(), "OK");
+            }
+            else
+            {
+                DisplayAlert("MySwitch 2", e.Value.ToString(), "OK");
+            }
+        }
 
         private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
