@@ -12,8 +12,7 @@ namespace Chapter1
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new Chapter1.BindingToDataModel();
+            MainPage = new PopupPage();
 		}
 
 		protected override void OnStart ()

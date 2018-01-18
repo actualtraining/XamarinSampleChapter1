@@ -18,13 +18,20 @@ namespace Chapter1
         {
             InitializeComponent();
             BindingContext = new DaftarMenuViewModel();
-           
+
+            btnClose.Clicked += (object sender, EventArgs e) =>
+            {
+                Navigation.PopModalAsync();
+            };
         }
+
+       
 
         private void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             DaftarMenu daftarMenu = (DaftarMenu)e.Item;
-            DisplayAlert("Keterangan", "Anda memilih menu " + daftarMenu.Kode + " - " + daftarMenu.Nama, "OK");
+            DisplayAlert("Keterangan", "Anda memilih menu " + daftarMenu.Kode + " - " + daftarMenu.Nama + " - " +
+                "Status "+daftarMenu.Status, "OK");
             ((ListView)sender).SelectedItem = null;
         }
     }

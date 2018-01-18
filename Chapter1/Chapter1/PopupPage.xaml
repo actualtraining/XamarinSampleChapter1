@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Chapter1;assembly=Chapter1"
+             x:Class="Chapter1.PopupPage">
+    <TabbedPage.Children>
+        <local:AlertPage Title="Alert" Icon="homeicon.png" />
+        <local:ActionSheetPage Title="Action Sheet" Icon="androicon.png" />
+    </TabbedPage.Children>
+</TabbedPage>

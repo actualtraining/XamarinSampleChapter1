@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:Chapter1"
              x:Class="Chapter1.MainPage" Title="Main Page">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="navDaftarMenu" Text="Daftar Menu" Order="Primary" Icon="androicon.png" />
+        <ToolbarItem x:Name="navSimpleBinding" Text="Simple Binding" Order="Secondary" />
+    </ContentPage.ToolbarItems>
     <ScrollView>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!" 
